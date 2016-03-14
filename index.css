@@ -158,13 +158,13 @@ em {
 
 header {
   position: relative;
-  height: 695px;
+  height: 440px;
   overflow: hidden;
 }
 
 header .background-image {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   min-width: 100%
 }
@@ -182,7 +182,7 @@ header .content, header .links {
 }
 
 header .content {
-  padding-top: 300px;
+  padding-top: 140px;
   padding-left: 60px;
   padding-right: 60px;
   max-width: 1400px;
@@ -202,13 +202,12 @@ header .links a {
   text-decoration: none;
   margin-left: 10px;
   font-size: 1em;
-  color: black;
-  text-shadow: none;
   padding: 0.4em 0.8em;
   display: inline-block;
 }
 
 header .links a.pro {
+  text-shadow: none;
   background: #E90700;
   color: white;
   float: right
@@ -246,7 +245,7 @@ header h1 + p {
 
 header p {
   font-weight: 200;
-  width: 50%;
+  width: 80%;
 }
 
 /*
@@ -262,11 +261,12 @@ header p {
 section.yellow {
   background: #F9C402;
   text-align: center;
-  padding: 1px 0 60px;
+  padding: 20px 0 60px;
 }
 
 section.yellow h2 {
   color: white;
+  margin: 20px 0;
 }
 
 table {
@@ -322,6 +322,10 @@ table .btn, .card .btn {
   border: 1px solid #e0e0e0;
   color: #333333;
   text-align: center;
+  font-weight: 200;
+}
+
+.card p {
   font-weight: 200;
 }
 
@@ -442,6 +446,29 @@ section.grey .btn {
   font-size: 2em
 }
 
+/*
+   ######  ##     ##    ###    ##       ##
+  ##    ## ###   ###   ## ##   ##       ##
+  ##       #### ####  ##   ##  ##       ##
+   ######  ## ### ## ##     ## ##       ##
+        ## ##     ## ######### ##       ##
+  ##    ## ##     ## ##     ## ##       ##
+   ######  ##     ## ##     ## ######## ########
+
+  ########  ########  ######  ##    ## ########  #######  ########
+  ##     ## ##       ##    ## ##   ##     ##    ##     ## ##     ##
+  ##     ## ##       ##       ##  ##      ##    ##     ## ##     ##
+  ##     ## ######    ######  #####       ##    ##     ## ########
+  ##     ## ##             ## ##  ##      ##    ##     ## ##
+  ##     ## ##       ##    ## ##   ##     ##    ##     ## ##
+  ########  ########  ######  ##    ##    ##     #######  ##
+*/
+
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 3em;
+  }
+}
 
 /*
   ########    ###    ########  ##       ######## ########
@@ -462,17 +489,26 @@ section.grey .btn {
     padding-right: 20px;
   }
 
+  header h1 {
+    font-size: 2.4em;
+  }
+
   h2 {
     font-size: 2em;
   }
 
   header .content {
-    padding-top: 180px;
+    padding-top: 120px;
+  }
+
+  header .links a {
+    color: black;
+    text-shadow: none;
   }
 
   header p {
     font-weight: 200;
-    width: 70%;
+    width: 100%;
   }
 
   header .call-to-actions .btn {
@@ -528,13 +564,9 @@ section.grey .btn {
   }
 
   header .content {
-    padding-top: 180px;
+    padding-top: 120px;
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  header .content p {
-    width: 100%;
   }
 
   header h1 {
