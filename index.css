@@ -231,7 +231,7 @@ header .call-to-actions .btn {
 }
 
 header .call-to-actions .goto, .view-more {
-  color: white;
+  color: black;
   text-transform: uppercase;
   display: block;
   text-decoration: none;
