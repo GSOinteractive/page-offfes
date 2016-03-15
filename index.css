@@ -16,6 +16,10 @@ a {
   color: #4691B6;
   font-weight: 300;
   text-decoration: none;
+}
+
+a.small
+{
   font-size: 0.8em;
 }
 
@@ -560,7 +564,7 @@ section.grey .btn {
   }
 
   header .links a.pro {
-    float: none;
+    display: none;
   }
 
   header .content {
