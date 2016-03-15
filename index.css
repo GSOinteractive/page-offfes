@@ -1,0 +1,594 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif, sans;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  fill: currentColor;
+}
+
+a {
+  color: #4691B6;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed';
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Open Sans Condensed';
+  margin: 0;
+  font-size: 1.6em;
+}
+
+h3 small {
+  font-weight: 200;
+  font-size: 0.5em
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  margin: 0;
+  font-size: 1.2em;
+  margin-bottom: -5px;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+h6 {
+  margin: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+}
+
+em {
+  display: block;
+  font-size: 0.7em;
+}
+
+.gutter {
+  width: 100%;
+  margin: 0 auto;
+  /*max-width: 100%;*/
+  overflow: hidden;
+}
+
+.inner-gutter {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.pull-right {
+  float: right;
+}
+
+.for-phone {
+  display: none;
+}
+
+/*
+  ########  ##     ## ######## ########  #######  ##    ##  ######
+  ##     ## ##     ##    ##       ##    ##     ## ###   ## ##    ##
+  ##     ## ##     ##    ##       ##    ##     ## ####  ## ##
+  ########  ##     ##    ##       ##    ##     ## ## ## ##  ######
+  ##     ## ##     ##    ##       ##    ##     ## ##  ####       ##
+  ##     ## ##     ##    ##       ##    ##     ## ##   ### ##    ##
+  ########   #######     ##       ##     #######  ##    ##  ######
+*/
+
+.btn {
+  font-family: 'Open Sans Condensed';
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.3em 1em 0.4em;
+  border-radius: 2em;
+  display: inline-block;
+}
+
+.btn.btn-plain {
+  background: #E90700;
+  color: white;
+}
+
+.btn.btn-outline {
+  color: #E90700;
+  border: 1px solid #E90700;
+}
+
+/*
+   ######   ########  #### ########
+  ##    ##  ##     ##  ##  ##     ##
+  ##        ##     ##  ##  ##     ##
+  ##   #### ########   ##  ##     ##
+  ##    ##  ##   ##    ##  ##     ##
+  ##    ##  ##    ##   ##  ##     ##
+   ######   ##     ## #### ########
+*/
+
+.row {
+  letter-spacing: -0.31em;
+  margin: 0 -10px;
+}
+
+[class*='col-'] {
+  letter-spacing: normal;
+  display: inline-block;
+  padding: 0 10px;
+  vertical-align: top
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+/*
+  ##     ## ########    ###    ########  ######## ########
+  ##     ## ##         ## ##   ##     ## ##       ##     ##
+  ##     ## ##        ##   ##  ##     ## ##       ##     ##
+  ######### ######   ##     ## ##     ## ######   ########
+  ##     ## ##       ######### ##     ## ##       ##   ##
+  ##     ## ##       ##     ## ##     ## ##       ##    ##
+  ##     ## ######## ##     ## ########  ######## ##     ##
+*/
+
+header {
+  position: relative;
+  height: 440px;
+  overflow: hidden;
+}
+
+header .background-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  min-width: 100%
+}
+
+header .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .content, header .links {
+  position: relative;
+  color: white;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+
+header .content {
+  padding-top: 140px;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 1400px;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+header .links {
+  z-index: 2;
+  padding: 10px;
+  padding-left: 120px;
+  text-align: right;
+}
+
+header .links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 1em;
+  padding: 0.4em 0.8em;
+  display: inline-block;
+}
+
+header .links a.pro {
+  text-shadow: none;
+  background: #E90700;
+  color: white;
+  float: right
+}
+
+header .call-to-actions {
+  text-align: center;
+  display: inline-block;
+}
+
+header .call-to-actions .btn {
+  font-size: 1.5em;
+  white-space: nowrap;
+}
+
+header .call-to-actions .goto, .view-more {
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+header h1 {
+  font-family: 'Open Sans Condensed';
+  text-transform: uppercase;
+  font-size: 4em;
+  margin: 0;
+}
+
+header h1 + p {
+  margin-top: 0;
+}
+
+header p {
+  font-weight: 200;
+  width: 80%;
+}
+
+/*
+  ########    ###    ########  ##       ########
+     ##      ## ##   ##     ## ##       ##
+     ##     ##   ##  ##     ## ##       ##
+     ##    ##     ## ########  ##       ######
+     ##    ######### ##     ## ##       ##
+     ##    ##     ## ##     ## ##       ##
+     ##    ##     ## ########  ######## ########
+*/
+
+section.yellow {
+  background: #F9C402;
+  text-align: center;
+  padding: 20px 0 60px;
+}
+
+section.yellow h2 {
+  color: white;
+  margin: 20px 0;
+}
+
+table {
+  background: white;
+  border-radius: 4px;
+  width: 100%;
+}
+
+tbody tr:nth-child(odd) {
+  background: #F0F0F0;
+}
+
+tr > *:first-child {
+  text-align: left;
+}
+
+th, td {
+  padding: 0.5em 2em;
+}
+
+td .badge {
+  background: #46C051;
+  color: white;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+table .btn, .card .btn {
+  font-weight: bold;
+}
+
+/*
+   ######     ###    ########  ########
+  ##    ##   ## ##   ##     ## ##     ##
+  ##        ##   ##  ##     ## ##     ##
+  ##       ##     ## ########  ##     ##
+  ##       ######### ##   ##   ##     ##
+  ##    ## ##     ## ##    ##  ##     ##
+   ######  ##     ## ##     ## ########
+*/
+
+.card {
+  background: white;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.card.grey {
+  background: #F3F3F3;
+  border: 1px solid #e0e0e0;
+  color: #333333;
+  text-align: center;
+  font-weight: 200;
+}
+
+.card p {
+  font-weight: 200;
+}
+
+.collapse {
+  height: 0;
+}
+
+.collapse.in {
+  height: auto;
+}
+
+.collapse > div {
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 500px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.collapse > div:first-child {
+  -webkit-perspective-origin: 150% 0%;
+  perspective-origin: 150% 50%;
+}
+
+.collapse > div:last-child {
+  -webkit-perspective-origin: -50% 0%;
+  perspective-origin: -50% 50%;
+}
+
+.collapse .card {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateX(-100deg);
+  transform-origin: top center;
+}
+
+.collapse.in .card {
+  -webkit-animation: hinge 0.8s forwards;
+  animation: hinge 0.8s forwards;
+}
+
+.collapse.in > div:nth-child(2) .card {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.collapse.in > div:last-child .card {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@keyframes hinge {
+  0% { transform: rotateX(-100deg); }
+  30% { transform: rotateX(30deg); }
+  50% { transform: rotateX(-10deg); }
+  70% { transform: rotateX(5deg); }
+  85% { transform: rotateX(-1deg); }
+  93% { transform: rotateX(1deg); }
+  100% { transform: rotateX(0deg); }
+}
+
+/*
+  ########  #######   #######  ######## ######## ########
+  ##       ##     ## ##     ##    ##    ##       ##     ##
+  ##       ##     ## ##     ##    ##    ##       ##     ##
+  ######   ##     ## ##     ##    ##    ######   ########
+  ##       ##     ## ##     ##    ##    ##       ##   ##
+  ##       ##     ## ##     ##    ##    ##       ##    ##
+  ##        #######   #######     ##    ######## ##     ##
+*/
+
+section.grey {
+  margin-top: 60px;
+  padding-top: 60px;
+  background-image: linear-gradient(to top, #deeaeb 0%, #f1f6f7 100%);
+  background-color: #deeaeb;
+}
+
+section.grey h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+section.grey h2 strong {
+  color: #E90700;
+}
+
+section.grey ul {
+  margin: 0;
+  padding: 0;
+}
+
+section.grey li {
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
+}
+
+section.grey .col-1-2 img {
+  display: block;
+}
+
+section.grey li img {
+  float: left;
+}
+
+section.grey h6, section.grey p {
+  margin-left: 116px;
+}
+
+section.grey p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 200;
+}
+
+section.grey .btn {
+  margin-top: 40px;
+  font-size: 2em
+}
+
+/*
+   ######  ##     ##    ###    ##       ##
+  ##    ## ###   ###   ## ##   ##       ##
+  ##       #### ####  ##   ##  ##       ##
+   ######  ## ### ## ##     ## ##       ##
+        ## ##     ## ######### ##       ##
+  ##    ## ##     ## ##     ## ##       ##
+   ######  ##     ## ##     ## ######## ########
+
+  ########  ########  ######  ##    ## ########  #######  ########
+  ##     ## ##       ##    ## ##   ##     ##    ##     ## ##     ##
+  ##     ## ##       ##       ##  ##      ##    ##     ## ##     ##
+  ##     ## ######    ######  #####       ##    ##     ## ########
+  ##     ## ##             ## ##  ##      ##    ##     ## ##
+  ##     ## ##       ##    ## ##   ##     ##    ##     ## ##
+  ########  ########  ######  ##    ##    ##     #######  ##
+*/
+
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 3em;
+  }
+}
+
+/*
+  ########    ###    ########  ##       ######## ########
+     ##      ## ##   ##     ## ##       ##          ##
+     ##     ##   ##  ##     ## ##       ##          ##
+     ##    ##     ## ########  ##       ######      ##
+     ##    ######### ##     ## ##       ##          ##
+     ##    ##     ## ##     ## ##       ##          ##
+     ##    ##     ## ########  ######## ########    ##
+*/
+@media (max-width: 992px) {
+  .for-desktop {
+    display: none;
+  }
+
+  .inner-gutter {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  header h1 {
+    font-size: 2.4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  header .content {
+    padding-top: 120px;
+  }
+
+  header .links a {
+    color: black;
+    text-shadow: none;
+  }
+
+  header p {
+    font-weight: 200;
+    width: 100%;
+  }
+
+  header .call-to-actions .btn {
+    font-size: 1.2em;
+  }
+
+  th, td {
+    padding: 0.5em 1em;
+  }
+}
+
+
+/*
+  ########  ##     ##  #######  ##    ## ########
+  ##     ## ##     ## ##     ## ###   ## ##
+  ##     ## ##     ## ##     ## ####  ## ##
+  ########  ######### ##     ## ## ## ## ######
+  ##        ##     ## ##     ## ##  #### ##
+  ##        ##     ## ##     ## ##   ### ##
+  ##        ##     ##  #######  ##    ## ########
+*/
+@media (max-width: 667px) {
+  body {
+    padding-bottom: 60px;
+  }
+
+  .not-for-phone {
+    display: none;
+  }
+
+  .for-phone {
+    display: block;
+  }
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  header {
+    height: 480px;
+  }
+
+  header img {
+    max-height: 100%;
+  }
+
+  header .links a {
+    display: block;
+  }
+
+  header .links a.pro {
+    float: none;
+  }
+
+  header .content {
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  .collapse > div {
+    -webkit-perspective-origin: 50% 0% !important;
+    perspective-origin: 50% 50% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  header .content {
+    padding-top: 100px;
+  }
+
+  header .content p {
+    font-size: 0.8em;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+}
