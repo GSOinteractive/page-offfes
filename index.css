@@ -195,6 +195,7 @@ header .content {
   max-width: 1400px;
   z-index: 1;
   margin: 0 auto;
+  text-align: center;
 }
 
 header .links {
@@ -223,6 +224,7 @@ header .links a.pro {
 header .call-to-actions {
   text-align: center;
   display: inline-block;
+  margin-top: 20px;
 }
 
 header .call-to-actions .btn {
@@ -254,6 +256,10 @@ header h1 + p {
 header p {
   font-weight: 200;
   width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 
 /*
