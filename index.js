@@ -1,11 +1,21 @@
 
 window.onload = function () {
-  console.log('loaded')
+  var listener = function (e) {
+    e.preventDefault()
+    var target = document.getElementById(viewMoreOffers.getAttribute('data-target'))
+    if (target.classList) {
+      target.classList.add('in')
+    } else {
+      target.className += ' in'
+    }
+    viewMoreOffers.parentNode.removeChild(viewMoreOffers)
+    return false
+  }
 
   var viewMoreOffers = document.querySelector('.view-more')
-  viewMoreOffers.addEventListener('click', function (e) {
-    e.preventDefault()
-    document.querySelector(viewMoreOffers.getAttribute('data-target')).classList.add('in')
-    viewMoreOffers.parentNode.removeChild(viewMoreOffers)
-  })
+  if (viewMoreOffers.addEventListener) {
+    viewMoreOffers.addEventListener('click', listener)
+  } else {
+    viewMoreOffers.onclick = listener
+  }
 }
