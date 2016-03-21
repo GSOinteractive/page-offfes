@@ -138,7 +138,7 @@ em {
   margin: 0 -10px;
 }
 
-[class*='col-'] {
+[class*='col-'], [class*='span'] {
   letter-spacing: normal;
   display: inline-block;
   padding: 0 10px;
@@ -425,6 +425,125 @@ table .btn, .card .btn {
 }
 
 /*
+  ########  ######## ########    ###    #### ##        ######
+  ##     ## ##          ##      ## ##    ##  ##       ##    ##
+  ##     ## ##          ##     ##   ##   ##  ##       ##
+  ##     ## ######      ##    ##     ##  ##  ##        ######
+  ##     ## ##          ##    #########  ##  ##             ##
+  ##     ## ##          ##    ##     ##  ##  ##       ##    ##
+  ########  ########    ##    ##     ## #### ########  ######
+*/
+
+.page_detail_offre .background-image {
+  min-height: 100%;
+  max-width: none;
+}
+
+.page_detail_offre .gutter {
+  margin-top: -20px;
+  background: white;
+}
+.page_detail_offre .btn {
+  font-weight: normal;
+  padding: 0.7em 0.7em 0.75em;
+}
+
+.page_detail_offre section {
+  padding: 40px 0;
+}
+
+.page_detail_offre header {
+  height: 540px;
+}
+.page_detail_offre header .content {
+  text-align: center;
+  color: white;
+  padding-top: 60px;
+}
+
+.page_detail_offre header h1 {
+  color: white;
+}
+
+.page_detail_offre header em {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.page_detail_offre header h1 em {
+  color: #F9C402;
+  display: inline;
+  font-style: normal;
+  font-weight: inherit;
+}
+
+.page_detail_offre .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  max-width: 50%;
+  margin: 20px auto;
+  font-size: 1.6em;
+}
+
+.page_detail_offre .overlay p {
+  font-size: 1.8em;
+  font-family: 'Open Sans Condensed';
+}
+
+.page_detail_offre .overlay p strong {
+  font-weight: inherit;
+  color: #F9C402;
+}
+
+.page_detail_offre .overlay a {
+  color: white;
+}
+
+.page_detail_offre .call-to-actions {
+  display: block;
+}
+
+.page_detail_offre .call-to-actions a {
+  text-transform: uppercase;
+  display: block;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.page_detail_offre .call-to-actions .btn {
+  font-size: 1.8em;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.page_detail_offre h2 {
+  margin-bottom: 20px
+}
+
+.page_detail_offre h2 + img {
+  margin-bottom: 20px
+}
+
+.page_detail_offre section a {
+  color: black;
+  font-size: 1.2em;
+}
+
+.page_detail_offre section.grey {
+  margin-top: 0;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+.page_detail_offre section.grey h2 {
+  font-size: 4em;
+}
+
+.page_detail_offre section.grey .btn {
+  font-size: 3em;
+}
+
+/*
   ########  #######   #######  ######## ######## ########
   ##       ##     ## ##     ##    ##    ##       ##     ##
   ##       ##     ## ##     ##    ##    ##       ##     ##
@@ -507,6 +626,10 @@ section.grey .btn {
   header h1 {
     font-size: 3em;
   }
+
+  .page_detail_offre header .overlay {
+    font-size: 1.2em;
+  }
 }
 
 /*
@@ -557,6 +680,30 @@ section.grey .btn {
   th, td {
     padding: 0.5em 1em;
   }
+
+  .span12 {
+    width: 100%;
+  }
+
+  .page_detail_offre .gutter {
+    overflow-x: hidden;
+  }
+
+  .page_detail_offre header {
+    height: 440px;
+  }
+
+  .page_detail_offre header .content {
+    padding: 20px;
+  }
+
+  .page_detail_offre header .overlay {
+    font-size: 1em;
+  }
+
+  .page_detail_offre section.grey h2 {
+    font-size: 2em;
+  }
 }
 
 
@@ -569,6 +716,13 @@ section.grey .btn {
   ##        ##     ## ##     ## ##   ### ##
   ##        ##     ##  #######  ##    ## ########
 */
+@media (max-width: 767px) {
+  .navbar-static-top {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 667px) {
   body {
     padding-bottom: 60px;
@@ -616,6 +770,27 @@ section.grey .btn {
     -webkit-perspective-origin: 50% 0% !important;
     perspective-origin: 50% 50% !important;
   }
+
+  .page_detail_offre header {
+    height: 440px;
+  }
+
+  .page_detail_offre header .overlay {
+    margin: 20px;
+    max-width: none;
+  }
+
+  .page_detail_offre section.grey img {
+    width: 60px;
+    height: 60px;
+  }
+  .page_detail_offre section.grey .btn {
+    font-size: 1.6em;
+  }
+
+  .page_detail_offre section.grey h6, .page_detail_offre section.grey p {
+    margin-left: 70px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -629,5 +804,14 @@ section.grey .btn {
 
   header h1 {
     font-size: 1.6em;
+  }
+
+  .page_detail_offre header {
+    height: 360px;
+  }
+  .page_detail_offre header .overlay {
+    margin: 0px;
+    font-size: 0.8em;
+    padding: 20px;
   }
 }
