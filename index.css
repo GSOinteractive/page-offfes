@@ -557,7 +557,14 @@ table .btn, .card .btn {
   background: transparent;
   color: #666666;
   border: none;
-  margin-left: 0;
+  margin-left: auto;
+}
+
+.page_detail_offre #footer.container .span12 {
+  margin: 0;
+}
+.page_detail_offre .prefooter {
+  display: none;
 }
 
 section.grey {
