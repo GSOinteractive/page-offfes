@@ -812,8 +812,12 @@ section.grey .btn {
 }
 
 @media (max-width: 480px) {
+  header {
+    height: 380px;
+  }
+
   header .content {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 
   header .content p {
