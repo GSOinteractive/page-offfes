@@ -370,6 +370,9 @@ table .btn, .card .btn {
 
 .collapse .card {
   -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateX(-100deg);
+  -webkit-transform-origin: top center;
+
   backface-visibility: hidden;
   transform: rotateX(-100deg);
   transform-origin: top center;
@@ -391,13 +394,34 @@ table .btn, .card .btn {
 }
 
 @keyframes hinge {
-  0% { transform: rotateX(-100deg); }
-  30% { transform: rotateX(30deg); }
-  50% { transform: rotateX(-10deg); }
-  70% { transform: rotateX(5deg); }
-  85% { transform: rotateX(-1deg); }
-  93% { transform: rotateX(1deg); }
-  100% { transform: rotateX(0deg); }
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+  }
+  30% {
+    -webkit-transform: rotateX(30deg);
+    transform: rotateX(30deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-10deg);
+    transform: rotateX(-10deg);
+  }
+  70% {
+    -webkit-transform: rotateX(5deg);
+    transform: rotateX(5deg);
+  }
+  85% {
+    -webkit-transform: rotateX(-1deg);
+    transform: rotateX(-1deg);
+  }
+  93% {
+    -webkit-transform: rotateX(1deg);
+    transform: rotateX(1deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
 }
 
 /*
@@ -413,8 +437,9 @@ table .btn, .card .btn {
 section.grey {
   margin-top: 60px;
   padding-top: 60px;
-  background-image: linear-gradient(to top, #deeaeb 0%, #f1f6f7 100%);
   background-color: #deeaeb;
+  background-image: -webkit-linear-gradient(top, #deeaeb, #f1f6f7);
+  background-image: linear-gradient(to top, #deeaeb, #f1f6f7);
 }
 
 section.grey h2 {
