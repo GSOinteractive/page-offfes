@@ -553,6 +553,13 @@ table .btn, .card .btn {
   ##        #######   #######     ##    ######## ##     ##
 */
 
+.page_detail_offre #footer.container {
+  background: transparent;
+  color: #666666;
+  border: none;
+  margin-left: 0;
+}
+
 section.grey {
   margin-top: 60px;
   padding-top: 60px;
@@ -691,6 +698,10 @@ section.grey .btn {
 
   .page_detail_offre header {
     height: 440px;
+  }
+
+  .page_detail_offre section {
+    padding: 20px 0;
   }
 
   .page_detail_offre header .content {
