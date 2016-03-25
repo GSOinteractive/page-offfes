@@ -488,6 +488,11 @@ table .btn, .card .btn {
 .page_detail_offre .overlay p {
   font-size: 1.8em;
   font-family: 'Open Sans Condensed';
+  line-height: 1.2em;
+}
+
+.page_detail_offre .overlay img {
+  margin-top: 20px;
 }
 
 .page_detail_offre .overlay p strong {
@@ -524,7 +529,7 @@ table .btn, .card .btn {
   margin-bottom: 20px
 }
 
-.page_detail_offre section a {
+.page_detail_offre .card a {
   color: black;
   font-size: 1.2em;
 }
