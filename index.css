@@ -44,6 +44,10 @@ h3 small {
   font-size: 0.5em
 }
 
+span.small {
+  font-size: 70%;
+}
+
 h4 {
   text-align: center;
   text-transform: uppercase;
@@ -845,5 +849,22 @@ section.grey .btn {
     margin: 0px;
     font-size: 0.8em;
     padding: 20px;
+  }
+
+  header.apple
+  {
+    height: 500px;
+    padding-top: 180px;
+  }
+
+  header.apple h1
+  {
+    font-size:  3em;
+  }
+
+  header.apple .overlay
+  {
+    font-size: 110%;
+    margin-top: 30px;
   }
 }
